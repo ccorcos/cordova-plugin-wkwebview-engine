@@ -509,7 +509,7 @@ static void * KVOContext = &KVOContext;
     wkWebView.allowsBackForwardNavigationGestures = [value boolValue];
 }
 
-- (void)clearHistroy:(CDVInvokedUrlCommand*)command;
+- (void)clearHistory:(CDVInvokedUrlCommand*)command;
 {
     CVDWKWebView* wkWebView = (CVDWKWebView*)_engineWebView;
     [wkWebView clearHistory];
